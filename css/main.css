@@ -1,5 +1,5 @@
 html,body{
-    background-color: #FEE7AA;
+    background-color: #ecece1;
 }
 
 nav{
@@ -9,7 +9,6 @@ nav{
 .col-box1{
     width:50%;
     height: 100px;
-    background-color: white;
     padding-top: 30px;
     color: wheat;
 }
@@ -21,7 +20,7 @@ nav{
     background-position: center;
     background-size: cover;
     padding-top: 30px;
-    color: wheat;
+    color: #ecece1;
     float: right;
     margin-right: -640px;
     margin-top: -120px;
@@ -35,17 +34,24 @@ nav{
     background-size: cover;
 }
 
+.col-box4{
+    height: 50px;
+    width: 150px;
+    background-image:url(/assets/Super\ sub\ logo.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
 .col-12{
     width: 100%;
     height: 250px;
-    background-color: #E59B3C;
+    background-color: #646e42;
     color: white;
     margin-bottom: 40px ;
-    
 }
 
 .jumbotron{
-    background-color: white;
+    background-color: #ecece1;    ;
     height: 500px;
     margin-top: 20px;
 }
@@ -54,7 +60,7 @@ nav{
     width: 45%;
 }
 
-.logo{
+.logo1{
     background-image: url(/assets/Super\ sub\ logo.png);
     background-position: center;
     background-size: cover;
@@ -65,8 +71,14 @@ nav{
 footer{
     width: 100%;
     height: 110px;
-    background-color: #5F6062;
+    background-color: #baba95;
     color: black;
     margin-top: 40px;
 }
+
+.p1{
+    float: center;
+    margin-top: -20px;
+}
+
 
