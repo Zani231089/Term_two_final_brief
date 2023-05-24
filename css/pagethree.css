@@ -56,3 +56,19 @@ footer{
     padding-top: 10px;
     margin-left: 70px;
 }
+
+.col-box10{
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.col-box11{
+    margin-top: 30px;
+    margin-left: -90px;
+}
+
+.col-box12{
+    margin-top: 30px;
+    margin-left: -180px;
+}
