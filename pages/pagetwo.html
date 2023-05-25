@@ -60,65 +60,45 @@
       <div class="col-12">
         <div class="col-box13">
           <form id="studentForm">
-            <h3>Created by whom?</h3>
+            <h3>Who created the Sandwhich</h3>
             <input type="text" class="form-control" placeholder="First Name" id="first" >
             <input type="text" class="form-control" placeholder="Last Name" id="last" >
-            <input type="number" class="form-control" placeholder="Age" id="age" >
-            <select class="form-control" id="subject">
-              <option>Select Your Subject</option>
-              <option>Development</option>
-              <option>UX Design</option>
-              <option>Product Design</option>
-            </select>
-      
-            <button class="btn btn-primary" type="button" onclick="addStudent()" >Add Student</button>    
-          </form>
-      
-          <form id="pizzaForm">
-            <h3>Custom Pizza Maker</h3>
             <div class="left">
-              <input type="text" class="form-control" placeholder="Name Your Pizza" id="pizzaName">
-              <select class="form-control" id="size">
-                <option>Choose a Size</option>
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
-              </select>
+              <input type="text" class="form-control" placeholder="Name Your Sandwhich" id="pizzaName">
             </div>
       
-            <div class="right">
-              <div class="orderCost">R0.00</div>
-            </div>
+            <button class="btn btn-primary" type="button" onclick="addStudent()" >Add Me</button>    
+          </form>    
       
               <div class="base-options">
       
-                <h3>Base Options</h3>
+                <h3>Bread base options</h3>
       
                 <div class="base-check">
-                  <input class="form-check-input" type="radio" name="baseRadio" id="standard" value="Standard" data-cost ="10"  checked>
-                  <label class="form-check-label" for="standard">
-                    Standard Base
+                  <input class="form-check-input" type="radio" name="baseRadio" id="Ciabatta" value="Ciabatta" data-cost ="10"  checked>
+                  <label class="form-check-label" for="ciabatta">
+                    Ciabatta bread
                   </label>
                 </div>
       
                 <div class="base-check">
-                  <input class="form-check-input" type="radio" name="baseRadio" id="deep" data-cost ="15" value="Deep Dish">
-                  <label class="form-check-label" for="deep">
-                    Deep Dish Base
+                  <input class="form-check-input" type="radio" name="baseRadio" id="whole" data-cost ="15" value="Whole Wheat Bread">
+                  <label class="form-check-label" for="whole">
+                    Whole Wheat Bread
                   </label>
                 </div>
       
                 <div class="base-check">
-                  <input class="form-check-input" type="radio" name="baseRadio" id="thin" data-cost ="20" value="Thin & Crispy">
-                  <label class="form-check-label" for="thin">
-                    Thin & Crispy Base
+                  <input class="form-check-input" type="radio" name="baseRadio" id="seeded" data-cost ="20" value="Seeded Bread">
+                  <label class="form-check-label" for="seeded">
+                    Seeded Bread
                   </label>
                 </div>
       
               </div>
       
               <div class="toppings">
-                <h3>Topping Options</h3>
+                <h3>Extra add on</h3>
       
                 <div class="top-check">
                   <input class="form-check-input" name="toppings" type="checkbox" value="salami" id="salami" data-cost="15">
@@ -182,9 +162,12 @@
                     Chillies
                   </label>
                 </div>
+                <div class="right">
+                  <div class="orderCost">R0.00</div>
+                </div>
       
                 </div>
-                <button class="btn btn-primary" type="button" onclick="makePizza()" >Make My Pizza</button>    
+                <button class="btn btn-primary" type="button" onclick="makePizza()" >Make my Sandwhich</button>    
                 <div class="output">
                   <h3>Your Current Order:</h3>
                   <div class="order-item"></div>
