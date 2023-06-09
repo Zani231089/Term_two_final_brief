@@ -6,29 +6,7 @@ nav{
     background-color: #f3ece6;
 }
 
-.heading1{
-    margin-top: 20px;
-    text-align: center;
-    color: black;
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-}
 
-.my-41{
-    width: 50%;
-    margin-left: 25%;
-    margin-bottom: -40px;
-}
-
-.form-control{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-}
-
-.card{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-}
 
 .nav-link{
     font-family: 'Raleway', sans-serif;
@@ -78,12 +56,39 @@ footer{
 }
 
 .col-box6{
-    width: 400px;
-    height: 60px;
-    background-color: #baba95;
-    margin-top: 25px;
-    padding-top: 10px;
-    margin-left: 70px;
+    background-image: url(../assets/Cover\ image.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 600px;
+    margin-left: 110px;
+    margin-top: 200px;
+}
+
+.col-box7{
+    background-color: #646e42;
+    opacity: 80%;
+    height: 780px;
+    width: 500px;
+    margin-top: 50px;
+
+}
+
+.col-box8{
+    background-color: #646e42;
+    width: 200px;
+    height: 320px;
+    margin-left: 20px;
+    color: white;
+}
+
+.col-box9{
+    background-color:#646e42;
+    width: 250px;
+    height: 320px;
+    margin-left: 230px;
+    margin-top: -320px;
+    color: white;
 }
 
 .text{
@@ -91,12 +96,6 @@ footer{
     height: 80px;
     text-align: center;
     background-color: grey;
-}
-
-.col-box10{
-    width: 40px;
-    height: 40px;
-    margin-top: 30px;
 }
 
 .col-box11{
@@ -109,50 +108,36 @@ footer{
     margin-left: -180px;
 }
 
-.col-box13{
-    width: 40%;
-    height: 950px;
-    background-color: #ecece1;
-    margin-left: 30%;
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-left: 70px;
-    padding-right:70px;
-    border: 2px;
-    border-color: black;
-    border-radius: 2px;
-}
-
-.col-box14{
-    width: 100%;
-    height: 50px;
-    background-color: gray;
-    margin-bottom: 20px;
-}
-
-.output{
+.heading1{
     text-align: center;
-    margin-top: 20px;
 }
 
-.base-options{
-    margin-top: 20px;
+.col-box13{
+    background-color:#646e42;
+    color: white;
+    margin-left: 5px;
+    margin-top: 40px;
+    width: 200px;
 }
 
-.toppings{
-    margin-top: 20px;
+.form-heading{
+    margin-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.top-check{
+.form-control{
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
     margin-left: 20px;
-    
 }
+
+
 
 .btn{
     margin-top: 10px;
 }
 
-
-.base-check{
-    margin-left: 20px;
-}
