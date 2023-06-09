@@ -72,3 +72,17 @@ footer{
     margin-top: 30px;
     margin-left: -180px;
 }
+
+.col-box14{
+    height: 800px;
+    width: 400px;
+    background-color: grey;
+    margin-top: -290px;
+    margin-left: 300px;
+}
+
+.col-box15{
+    height: 300px;
+    width: 690px;
+    background-color: grey;margin-top: 20px;
+}

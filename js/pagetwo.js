@@ -4,8 +4,9 @@ makeSubway = () => {
 
     let subwayTotal = 0;
 
-    let subwayName = document.getElementById("subwayName").ariaValueMax;
+    let subwayName = document.getElementById("subwayName").value;
     let bread = document.getElementById("bread").value;
+
 
     if(bread === "Artisan Italian"){
         subwayTotal = subwayTotal + 20;
@@ -17,20 +18,48 @@ makeSubway = () => {
         subwayTotal = subwayTotal + 50
     }
 
-    let toppingsOptions = document.getElementById("toppings");
+    let meatOption = document.getElementById("meatOption");
     let topArray = [];
-    for(let i = 0; i < toppingsOptions.length; i++){
-        if(toppingsOptions[i].checked){
-            topArray.push(toppingsOptions[i].value);
-            subwayTotal = subwayTotal + +toppingsOptions[i].dataset.cost
+    for(let i = 0; i < meatOption.length; i++){
+        if(meatOption[i].checked){
+            topArray.push(meatOption[i].value);
+            subwayTotal = subwayTotal + +meatOption[i].dataset.cost
+        }
+    }
+
+    let vegetableOption = document.getElementById("vegetableOption");
+    let vegArray = [];
+    for(let i = 0; i < vegetableOption.length; i++){
+        if(vegetableOption[i].checked){
+            vegArray.push(vegetableOption[i].value);
+            subwayTotal = subwayTotal + +vegetableOption[i].dataset.cost
+        }
+    }
+
+    let cheeseOption = document.getElementById("cheeseOption");
+    let cheArray = [];
+    for(let i = 0; i < cheeseOption.length; i++){
+        if(cheeseOption[i].checked){
+            cheArray.push(cheeseOption[i].value);
+            subwayTotal = subwayTotal + +cheeseOption[i].dataset.cost
+        }
+    }
+
+    let veganOption = document.getElementById("veganOption");
+    let veganArray = [];
+    for(let i = 0; i < veganOption.length; i++){
+        if(veganOption[i].checked){
+            topArray.push(veganOption[i].value);
+            subwayTotal = subwayTotal + +veganOption[i].dataset.cost
         }
     }
 
     pizzaOrder.push({
         subwayName: subwayName,
-        subwayBread: bread,
-        subwayToppings: topArray,
-        subwayPrice: subwayTotal
+        meatOption: topArray,
+        vegetableOption: vegArray,
+        cheeseOption: cheArray,
+        veganOption: veganArray
     });
 
     console.log(subwayOrder)
@@ -55,12 +84,6 @@ realTimeCost = () => {
         realTimePrice = realTimePrice + 50;
     }
 
-    let toppingsOption = document.getElementById("toppings");
-    for(let i = 0; i < toppingsOptions.length; i++){
-        if(toppingsOptions[i].checked){
-            realTimePrice = realTimePrice + +toppingsOptions[i].dataset.cost
-        }
-    }
 
     document.getElementById("realTimeCost").innerHTML = "R" + realTimePrice + ", 00"
 }
