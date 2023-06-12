@@ -61,14 +61,14 @@ footer{
     height: 500px;
     width: 600px;
     margin-left: 110px;
-    margin-top: 200px;
+    margin-top: 170px;
     border-radius: 50px;
 }
 
 .col-box7{
     background-color: #646e42;
     opacity: 80%;
-    height: 780px;
+    height: 710px;
     width: 500px;
     margin-top: 50px;
     border-radius: 40px;
@@ -89,6 +89,12 @@ footer{
     height: 320px;
     margin-left: -15px;
     color: white;
+}
+
+.col-box10{
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
 }
 
 .text{
@@ -115,9 +121,17 @@ footer{
 .col-box13{
     background-color:#646e42;
     color: white;
-    margin-left: -220px;
-    margin-top: 20px;
+    margin-left: -240px;
+    margin-top: 5px;
     width: 200px;
+}
+
+.col-box14{
+    background-color: #646e42;
+    width: 195%;
+    height: 200px;
+    margin-left: -100%;
+    margin-top: 40px;
 }
 
 h5{
@@ -145,22 +159,38 @@ h5{
     margin-top: 10px;
 }
 
-.horizontal-line{
-    width: 50%;
+.horizontal-line1{
+    width:70%;
     height: 1.5px;
     background-color: bisque;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 210px;
+    margin-left: 80px;
+}
+
+.horizontal-line2{
+    width: 145%;
+    height: 1.5px;
+    background-color: bisque;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-left: -180px;
 }
 
 .right{
     background-color: bisque;
-    margin-top: -90px;
-    margin-left: 430px;
+    margin-top: -100px;
+    margin-left: 390px;
     width: 60px;
     text-align: center;
     height: 60px;
     padding-top: 20px;
     border-radius: 5px;
+    color: black;
+}
+
+.btn{
+    width: 150px;
+    margin-left: -680px;
+    margin-top: 20px;
 }

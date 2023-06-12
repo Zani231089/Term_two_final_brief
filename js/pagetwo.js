@@ -71,7 +71,7 @@ makeSubway = () => {
 }
 
 realTimeCost = () => {
-    realTimePrice = 0;
+    let realTimePrice = 0;
     let subwayTotal = 0;
 
     let bread = document.getElementById("bread").value;
