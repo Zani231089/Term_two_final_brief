@@ -86,46 +86,36 @@ realTimeCost = () => {
     }
 
     let meatOption = document.getElementsByName("meatOption");
-    let topArray = [];
     for(let i = 0; i < meatOption.length; i++){
         if(meatOption[i].checked){
-            topArray.push(meatOption[i].value);
             subwayTotal = subwayTotal + +meatOption[i].dataset.cost
         }
     }
 
     let vegetableOption = document.getElementsByName("vegetableOption");
-    let vegArray = [];
     for(let i = 0; i < vegetableOption.length; i++){
         if(vegetableOption[i].checked){
-            vegArray.push(vegetableOption[i].value);
             subwayTotal = subwayTotal + +vegetableOption[i].dataset.cost
         }
     }
 
     let cheeseOption = document.getElementsByName("cheeseOption");
-    let cheArray = [];
     for(let i = 0; i < cheeseOption.length; i++){
         if(cheeseOption[i].checked){
-            cheArray.push(cheeseOption[i].value);
             subwayTotal = subwayTotal + +cheeseOption[i].dataset.cost
         }
     }
 
     let veganOption = document.getElementsByName("veganOption");
-    let veganArray = [];
     for(let i = 0; i < veganOption.length; i++){
         if(veganOption[i].checked){
-            veganArray.push(veganOption[i].value);
             subwayTotal = subwayTotal + +veganOption[i].dataset.cost
         }
     }
 
     let sauceOption = document.getElementsByName("sauceOption");
-    let sauceArray = [];
     for(let i = 0; i < sauceOption.length; i++){
         if(sauceOption[i].checked){
-            sauceArray.push(sauceOption[i].value);
             subwayTotal = subwayTotal + +sauceOption[i].dataset.cost
         }
     }

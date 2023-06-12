@@ -6,19 +6,18 @@ nav{
     background-color: #f3ece6;
 }
 
-
-
 .nav-link{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
 
 footer{
-    width: 100%;
+    width: 204%;
     height: 110px;
     background-color: #baba95;
     color: black;
     margin-top: 90px;
+    margin-left: -104%;
 }
 
 .logo1{
@@ -63,6 +62,7 @@ footer{
     width: 600px;
     margin-left: 110px;
     margin-top: 200px;
+    border-radius: 50px;
 }
 
 .col-box7{
@@ -71,6 +71,7 @@ footer{
     height: 780px;
     width: 500px;
     margin-top: 50px;
+    border-radius: 40px;
 
 }
 
@@ -86,8 +87,7 @@ footer{
     background-color:#646e42;
     width: 250px;
     height: 320px;
-    margin-left: 230px;
-    margin-top: -320px;
+    margin-left: -15px;
     color: white;
 }
 
@@ -115,9 +115,15 @@ footer{
 .col-box13{
     background-color:#646e42;
     color: white;
-    margin-left: 5px;
-    margin-top: 40px;
+    margin-left: -220px;
+    margin-top: 20px;
     width: 200px;
+}
+
+h5{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .form-heading{
@@ -135,9 +141,26 @@ footer{
     margin-left: 20px;
 }
 
-
-
 .btn{
     margin-top: 10px;
 }
 
+.horizontal-line{
+    width: 50%;
+    height: 1.5px;
+    background-color: bisque;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 210px;
+}
+
+.right{
+    background-color: bisque;
+    margin-top: -90px;
+    margin-left: 430px;
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+    border-radius: 5px;
+}
