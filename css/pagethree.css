@@ -84,5 +84,49 @@ footer{
 .col-box15{
     height: 300px;
     width: 690px;
-    background-color: grey;margin-top: 20px;
+    margin-top: 20px;
+
+}
+
+.col-box16{
+    height: 300px;
+    width: 690px;
+    background-color: #646e42;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.col-box17{
+    height: 620px;
+    width: 690px;
+    background-color: #646e42;
+    opacity: 50%;
+    margin-top: -300px;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.col-box18{
+    background-image: url(../assets/Checkout\ 1.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.col-box19{
+    background-image: url(../assets/Checkout\ 2.jpeg) ;
+    background-position: center;
+    background-size: cover; ;
+    height: 300px;
+    margin-left: 2px;
+}
+
+.col-box20{
+    background-image: url(../assets/Checkout\ 3.jpeg) ;
+    background-position: center;
+    background-size: cover; ;
+    height: 300px;
 }
