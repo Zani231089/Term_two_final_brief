@@ -18,7 +18,7 @@ makeSubway = () => {
         subwayTotal = subwayTotal + 50
     }
 
-    let meatOption = document.getElementById("meatOption");
+    let meatOption = document.getElementsByName("meatOption");
     let topArray = [];
     for(let i = 0; i < meatOption.length; i++){
         if(meatOption[i].checked){
@@ -27,7 +27,7 @@ makeSubway = () => {
         }
     }
 
-    let vegetableOption = document.getElementById("vegetableOption");
+    let vegetableOption = document.getElementsByName("vegetableOption");
     let vegArray = [];
     for(let i = 0; i < vegetableOption.length; i++){
         if(vegetableOption[i].checked){
@@ -36,7 +36,7 @@ makeSubway = () => {
         }
     }
 
-    let cheeseOption = document.getElementById("cheeseOption");
+    let cheeseOption = document.getElementsByName("cheeseOption");
     let cheArray = [];
     for(let i = 0; i < cheeseOption.length; i++){
         if(cheeseOption[i].checked){
@@ -45,7 +45,7 @@ makeSubway = () => {
         }
     }
 
-    let veganOption = document.getElementById("veganOption");
+    let veganOption = document.getElementsByName("veganOption");
     let veganArray = [];
     for(let i = 0; i < veganOption.length; i++){
         if(veganOption[i].checked){
@@ -72,6 +72,7 @@ makeSubway = () => {
 
 realTimeCost = () => {
     realTimePrice = 0;
+    let subwayTotal = 0;
 
     let bread = document.getElementById("bread").value;
     if(bread === "Artisan Italian"){
@@ -82,6 +83,51 @@ realTimeCost = () => {
         realTimePrice = realTimePrice + 60;
     } else if(bread === "Malted Rye"){
         realTimePrice = realTimePrice + 50;
+    }
+
+    let meatOption = document.getElementsByName("meatOption");
+    let topArray = [];
+    for(let i = 0; i < meatOption.length; i++){
+        if(meatOption[i].checked){
+            topArray.push(meatOption[i].value);
+            subwayTotal = subwayTotal + +meatOption[i].dataset.cost
+        }
+    }
+
+    let vegetableOption = document.getElementsByName("vegetableOption");
+    let vegArray = [];
+    for(let i = 0; i < vegetableOption.length; i++){
+        if(vegetableOption[i].checked){
+            vegArray.push(vegetableOption[i].value);
+            subwayTotal = subwayTotal + +vegetableOption[i].dataset.cost
+        }
+    }
+
+    let cheeseOption = document.getElementsByName("cheeseOption");
+    let cheArray = [];
+    for(let i = 0; i < cheeseOption.length; i++){
+        if(cheeseOption[i].checked){
+            cheArray.push(cheeseOption[i].value);
+            subwayTotal = subwayTotal + +cheeseOption[i].dataset.cost
+        }
+    }
+
+    let veganOption = document.getElementsByName("veganOption");
+    let veganArray = [];
+    for(let i = 0; i < veganOption.length; i++){
+        if(veganOption[i].checked){
+            veganArray.push(veganOption[i].value);
+            subwayTotal = subwayTotal + +veganOption[i].dataset.cost
+        }
+    }
+
+    let sauceOption = document.getElementsByName("sauceOption");
+    let sauceArray = [];
+    for(let i = 0; i < sauceOption.length; i++){
+        if(sauceOption[i].checked){
+            sauceArray.push(sauceOption[i].value);
+            subwayTotal = subwayTotal + +sauceOption[i].dataset.cost
+        }
     }
 
 
