@@ -11,11 +11,11 @@ makeSubway = () => {
     if(bread === "Artisan Italian"){
         subwayTotal = subwayTotal + 20;
     } else if(bread === "Wheat bread"){
-        subwayTotal = subwayTotal + 40;
+        subwayTotal = subwayTotal + 15;
     } else if(bread === "Sourdough"){
-        subwayTotal = subwayTotal + 60;
+        subwayTotal = subwayTotal + 10;
     } else if(bread === "Malted Rye"){
-        subwayTotal = subwayTotal + 50
+        subwayTotal = subwayTotal + 5
     }
 
     let meatOption = document.getElementsByName("meatOption");
@@ -54,7 +54,7 @@ makeSubway = () => {
         }
     }
 
-    pizzaOrder.push({
+    subwayOrder.push({
         subwayName: subwayName,
         meatOption: topArray,
         vegetableOption: vegArray,
@@ -122,4 +122,48 @@ realTimeCost = () => {
 
 
     document.getElementById("realTimeCost").innerHTML = "R" + realTimePrice + ", 00"
+}
+
+displayOrder = () => {
+     
+    let area = document.getElementById("orders");
+    let total = document.getElementById("orderTotal")
+
+    area.innerHTML = "";
+
+    let overallTotal = 0;  
+
+    for(let i = 0; i < subwayOrder.length; i++){
+        let name = subwayOrder[i].subwayName;
+        let bread = subwayOrder[i].bread;
+        let meat = subwayOrder[i].meatOption;
+        let vegetable = subwayOrder[i].vegetableOption;
+        let cheese = subwayOrder[i].cheeseOption;
+        let vegan = subwayOrder[i].veganOption;
+        let sauce = subwayOrder[i].sauceOption;
+        let price = subwayOrder[i].
+
+        overallTotal += realTimePrice;
+
+        area.innerHTML +=`
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">${name}</h6>
+                <p class="card-text">Bread:${bread}</p>
+                <p class="card-text">Meat:${meat}</p>
+                <p class="card-text">Vegetable:${vegetable}</p>
+                <p class="card-text">Cheese:${cheese}</p>
+                <p class="card-text">Vegan:${vegan}</p>
+                <p class="card-text">Sauce:${sauce}</p>
+            </div>
+        </div>`
+
+        total.innerHTML = "R" + overallTotal + ".00"
+    }
+}
+
+checkOut = () => {
+    let data = JSON.stringify(subwayOrder)
+    localStorage.setItem('orders', data)
+    window.location.href = 'pages/pagethree.html'
 }
