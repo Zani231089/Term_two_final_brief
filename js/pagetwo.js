@@ -49,7 +49,16 @@ makeSubway = () => {
     let veganArray = [];
     for(let i = 0; i < veganOption.length; i++){
         if(veganOption[i].checked){
-            topArray.push(veganOption[i].value);
+            veganArray.push(veganOption[i].value);
+            subwayTotal = subwayTotal + +veganOption[i].dataset.cost
+        }
+    }
+
+    let sauceOption = document.getElementsByName("sauceOption");
+    let sauceArray = [];
+    for(let i = 0; i < veganOption.length; i++){
+        if(veganOption[i].checked){
+            sauceArray.push(veganOption[i].value);
             subwayTotal = subwayTotal + +veganOption[i].dataset.cost
         }
     }
@@ -57,9 +66,11 @@ makeSubway = () => {
     subwayOrder.push({
         subwayName: subwayName,
         meatOption: topArray,
-        vegetableOption: vegArray,
+        vegetableOption: veganArray,
         cheeseOption: cheArray,
-        veganOption: veganArray
+        veganOption: vegArray,
+        subPrice: subwayTotal,
+        sauceOption: sauceArray
     });
 
     console.log(subwayOrder)
@@ -71,8 +82,7 @@ makeSubway = () => {
 }
 
 realTimeCost = () => {
-    let realTimePrice = 0;
-    let subwayTotal = 0;
+    realTimePrice = 0;
 
     let bread = document.getElementById("bread").value;
     if(bread === "Artisan Italian"){
@@ -88,35 +98,35 @@ realTimeCost = () => {
     let meatOption = document.getElementsByName("meatOption");
     for(let i = 0; i < meatOption.length; i++){
         if(meatOption[i].checked){
-            subwayTotal = subwayTotal + +meatOption[i].dataset.cost
+            realTimePrice = realTimePrice + +meatOption[i].dataset.cost
         }
     }
 
     let vegetableOption = document.getElementsByName("vegetableOption");
     for(let i = 0; i < vegetableOption.length; i++){
         if(vegetableOption[i].checked){
-            subwayTotal = subwayTotal + +vegetableOption[i].dataset.cost
+            realTimePrice = realTimePrice + +vegetableOption[i].dataset.cost
         }
     }
 
     let cheeseOption = document.getElementsByName("cheeseOption");
     for(let i = 0; i < cheeseOption.length; i++){
         if(cheeseOption[i].checked){
-            subwayTotal = subwayTotal + +cheeseOption[i].dataset.cost
+            realTimePrice = realTimePrice + +cheeseOption[i].dataset.cost
         }
     }
 
     let veganOption = document.getElementsByName("veganOption");
     for(let i = 0; i < veganOption.length; i++){
         if(veganOption[i].checked){
-            subwayTotal = subwayTotal + +veganOption[i].dataset.cost
+            realTimePrice = realTimePrice + +veganOption[i].dataset.cost
         }
     }
 
     let sauceOption = document.getElementsByName("sauceOption");
     for(let i = 0; i < sauceOption.length; i++){
         if(sauceOption[i].checked){
-            subwayTotal = subwayTotal + +sauceOption[i].dataset.cost
+            realTimePrice = realTimePrice + +sauceOption[i].dataset.cost
         }
     }
 
@@ -126,7 +136,7 @@ realTimeCost = () => {
 
 displayOrder = () => {
      
-    let area = document.getElementById("orders");
+    let area = document.getElementById("ORDERNOW");
     let total = document.getElementById("orderTotal")
 
     area.innerHTML = "";
@@ -134,6 +144,7 @@ displayOrder = () => {
     let overallTotal = 0;  
 
     for(let i = 0; i < subwayOrder.length; i++){
+
         let name = subwayOrder[i].subwayName;
         let bread = subwayOrder[i].bread;
         let meat = subwayOrder[i].meatOption;
@@ -141,7 +152,7 @@ displayOrder = () => {
         let cheese = subwayOrder[i].cheeseOption;
         let vegan = subwayOrder[i].veganOption;
         let sauce = subwayOrder[i].sauceOption;
-        let price = subwayOrder[i].
+        let price = subwayOrder[i].subPrice
 
         overallTotal += realTimePrice;
 
@@ -155,6 +166,7 @@ displayOrder = () => {
                 <p class="card-text">Cheese:${cheese}</p>
                 <p class="card-text">Vegan:${vegan}</p>
                 <p class="card-text">Sauce:${sauce}</p>
+                <p class="card-text">Sauce:${price}</p>
             </div>
         </div>`
 
