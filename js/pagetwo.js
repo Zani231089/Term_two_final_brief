@@ -56,19 +56,19 @@ makeSubway = () => {
 
     let sauceOption = document.getElementsByName("sauceOption");
     let sauceArray = [];
-    for(let i = 0; i < veganOption.length; i++){
-        if(veganOption[i].checked){
-            sauceArray.push(veganOption[i].value);
-            subwayTotal = subwayTotal + +veganOption[i].dataset.cost
+    for(let i = 0; i < sauceOption.length; i++){
+        if(sauceOption[i].checked){
+            sauceArray.push(sauceOption[i].value);
+            subwayTotal = subwayTotal + +sauceOption[i].dataset.cost
         }
     }
 
     subwayOrder.push({
         subwayName: subwayName,
         meatOption: topArray,
-        vegetableOption: veganArray,
+        vegetableOption: vegArray,
         cheeseOption: cheArray,
-        veganOption: vegArray,
+        veganOption: veganArray,
         subPrice: subwayTotal,
         sauceOption: sauceArray
     });
@@ -157,7 +157,7 @@ displayOrder = () => {
         overallTotal += realTimePrice;
 
         area.innerHTML +=`
-        <div class="card">
+        <div class="card" style="width:250px">
             <div class="card-body">
                 <h6 class="card-title">${name}</h6>
                 <p class="card-text">Bread:${bread}</p>
@@ -166,7 +166,7 @@ displayOrder = () => {
                 <p class="card-text">Cheese:${cheese}</p>
                 <p class="card-text">Vegan:${vegan}</p>
                 <p class="card-text">Sauce:${sauce}</p>
-                <p class="card-text">Sauce:${price}</p>
+                <p class="card-text">Price:R${price}</p>
             </div>
         </div>`
 
@@ -176,6 +176,6 @@ displayOrder = () => {
 
 checkOut = () => {
     let data = JSON.stringify(subwayOrder)
-    localStorage.setItem('orders', data)
+    localStorage.setItem('ORDERNOW', data)
     window.location.href = 'pages/pagethree.html'
 }
