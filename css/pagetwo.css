@@ -7,6 +7,16 @@ nav{
     background-color: #f3ece6;
 }
 
+h5{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+h7{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
 .nav-link{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -19,6 +29,7 @@ footer{
     color: black;
     margin-top: 90px;
     margin-left: -104%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .logo1{
@@ -69,10 +80,12 @@ footer{
 .col-box7{
     background-color: #646e42;
     opacity: 80%;
-    height: 710px;
+    height: 790px;
     width: 500px;
     margin-top: 50px;
     border-radius: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
 
 }
 
@@ -82,6 +95,8 @@ footer{
     height: 320px;
     margin-left: 20px;
     color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
 }
 
 .col-box9{
@@ -117,6 +132,32 @@ footer{
 
 .heading1{
     text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.sub-heading{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.sauce-heading{
+    color: darkgrey;
+    width: 200%;
+    margin-left: -150px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.sub-main{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;;
 }
 
 .col-box13{
@@ -130,9 +171,9 @@ footer{
 .col-box14{
     background-color: #646e42;
     width: 195%;
-    height: 400px;
+    height: 730px;
     margin-left: -100%;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 100px;
     border-radius: 4px;
 }
@@ -202,18 +243,56 @@ h5{
     padding-top: 20px;
     border-radius: 5px;
     color: black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
 
 }
 
 .btn{
     width: 200px;
     margin-left: 450px;
-    margin-top: 80px;
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
 }
 
 .subway{
     height: 30px;
     width: 100px;
     margin-left: -190px;
-    margin-top: -50px;
+    margin-top: 20px;
 }
+
+.col-box15{
+    text-align: center;
+    margin-top: -55px;
+    margin-left: 185px;
+    border-radius: 200px;
+    padding-top: 12px;
+    background-color: lightblue;
+}
+
+.card{
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+.order-heading{
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.card-title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+

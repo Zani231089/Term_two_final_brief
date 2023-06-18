@@ -160,13 +160,15 @@ displayOrder = () => {
         <div class="card" style="width:250px">
             <div class="card-body">
                 <h6 class="card-title">${name}</h6>
-                <p class="card-text">Bread:${bread}</p>
-                <p class="card-text">Meat:${meat}</p>
-                <p class="card-text">Vegetable:${vegetable}</p>
-                <p class="card-text">Cheese:${cheese}</p>
-                <p class="card-text">Vegan:${vegan}</p>
-                <p class="card-text">Sauce:${sauce}</p>
-                <p class="card-text">Price:R${price}</p>
+                <p class="card-text"><h7>Base:</h7>${bread}</p>
+                <p class="card-text"><h7>Meat:</h7>${meat}</p>
+                <p class="card-text"><h7>Vegetable:</h7>${vegetable}</p>
+                <p class="card-text"><h7>Cheese:</h7>${cheese}</p>
+                <p class="card-text"><h7>Vegan:</h7>${vegan}</p>
+                <p class="card-text"><h7>Sauce:</h7>${sauce}</p>
+            </div>
+            <div class="money">
+                <div class="col-box15" style="width: 50px; height: 50px; border-radius: 50%;"><h7>R${price}</h7></div>
             </div>
         </div>`
 

@@ -60,7 +60,10 @@
       <div class="col-6">
         <div class="col-box7">
           <form id="subwayForm" onchange="realTimeCost()">
-            <h5> Build your very own subway Submarine Sandwhich</h5>
+            <h5> Build your very own Subway Sandwhich</h5>
+            <div class="sub-main">
+              <h8>Be sure to name your unique creation down below:</h8>
+            </div>
             
             <div class="form-group">
               <input class="form-control" type="text" placeholder="Name your Subway" id="subwayName">
@@ -76,6 +79,9 @@
 
             <div class="heading1">
               <h4>A choice of 20 toppings: </h4>
+            </div>
+            <div class="sub-heading">
+              <h7>Select a minimum of 5 toppings of your choice:</h7>
             </div>
 
             <div class="row">
@@ -248,8 +254,17 @@
               <div class="horizontal-line2"></div>
 
               <div class="row">
+                <div class="col-12">
+                  <div class="sauce-heading">
+                    <h7>Select a minimum of one of your choice:</h7>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
                 <div class="col-6">
                   <div class="col-box13">
+
 
                     <div class="sauceOption">
 
@@ -306,13 +321,29 @@
           </form>
       </div>          
     </div>
+
+    <button type="button" class="btn btn-outline-success"><a href="pagethree.html" onclick="checkOut()">Proceed to CheckOut</a> </button>
+    
     <div class="row">
       <div class="col-12">
         <div class="col-box14" id="orders">
+        <div class="order-heading">
+          <h3>Your order display:</h3>
+        </div>
+          
+          <div class="cards">
+            <div class="row">
+              <div class="col-3">
 
-    <div id="ORDERNOW">
+                <div class="card1">
+                  <div id="ORDERNOW">
+                     
+                  </div>
+                </div>
+              </div>
 
-    </div>
+            </div>
+          </div>
 
         </div>
         <div class="right2">
@@ -323,7 +354,7 @@
 
    
 
-    <button type="button" class="btn btn-outline-success"><a href="pagethree.html" onclick="checkOut()">Proceed to CheckOut</a> </button>
+    
 
     
 
